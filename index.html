@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Choice</title>
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+<!-- صفحه شروع -->
+<div id="startScreen">
+  <!-- High Score بالای بالای صفحه -->
+  <div id="highScoreDisplay">High Score: 0</div>
+
+  <h1>Best Choice</h1>
+  <button id="startBtn">Start</button>
+</div>
+
+<!-- صفحه بازی -->
+<div id="gameScreen" style="display:none; flex-direction: column; align-items: center;">
+
+  <!-- ردیف بالا: قلب ها و امتیاز -->
+  <div id="topRow">
+    <div id="hearts">
+      <span id="heart1">❤️</span>
+      <span id="heart2">❤️</span>
+    </div>
+    <div id="score">Score: 0</div>
+  </div>
+
+  <!-- تصاویر وسط صفحه -->
+  <div id="images">
+    <img id="img1" class="choice" src="" alt="choice1">
+    <img id="img2" class="choice" src="" alt="choice2">
+  </div>
+
+  <!-- دکمه Next -->
+  <button id="nextBtn">Next</button>
+
+  <!-- feedback پایین دکمه -->
+  <div id="feedback"></div>
+
+  <audio id="sound-correct" src="sounds/correct.mp3"></audio>
+  <audio id="sound-wrong" src="sounds/wrong.mp3"></audio>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* --- عمومی --- */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* --- صفحه Start --- */
+#startScreen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('images/fp.png'); /* تصویر بکگراند */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#highScoreDisplay {
+  position: absolute;
+  top: 10px;
+  font-size: 24px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+#startScreen h1 {
+  font-size: 36px;
+  margin-top: 80px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+#startScreen button {
+  font-size: 24px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(76, 175, 80, 0.8);
+  color: white;
+  transition: background-color 0.2s;
+}
+
+#startScreen button:hover {
+  background-color: rgba(69, 160, 73, 0.9);
+}
+
+/* --- ردیف بالا در بازی --- */
+#topRow {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+#hearts span {
+  font-size: 36px;
+  margin-right: 5px;
+  color: red;
+}
+
+#score {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* --- تصاویر وسط صفحه --- */
+#images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.choice {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.choice:hover {
+  transform: scale(1.05);
+}
+
+.correct-click {
+  border-color: green;
+  transform: scale(1.1);
+}
+
+.wrong-click {
+  border-color: red;
+  transform: scale(1.1);
+}
+
+/* --- دکمه Next --- */
+#nextBtn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #2196F3;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+#nextBtn:hover {
+  background-color: #0b7dda;
+}
+
+/* --- feedback ✔️ ❌ --- */
+#feedback {
+  margin-top: 20px;
+  font-size: 80px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
